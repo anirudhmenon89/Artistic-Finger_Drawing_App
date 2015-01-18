@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="10dp" 
+    android:paddingRight="10dp"
+    android:background="@color/dialogBackground" >
+
+    <TextView
+        android:id="@+id/tvPencilEraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pencil"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvStrokeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:textColor="#000000"
+        android:text="Stroke width: " />
+
+    <SeekBar
+        android:id="@+id/sbStroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/horizontalprogressbar"
+        android:thumb="@drawable/seekbarthumb_notext"
+        android:paddingBottom="15dp"
+        android:minHeight="10dp"
+        android:maxHeight="10dp" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" > 
+
+    <ImageButton
+        android:id="@+id/btnSetStroke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/okbutton"
+        android:src="@drawable/tick"
+        android:text="Set Stroke" />
+    
+    <ImageButton
+        android:id="@+id/btnCancelStroke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/cancelbutton"
+        android:src="@drawable/cancel"
+        android:text="Set Stroke" />
+    
+    </LinearLayout>>
+
+</LinearLayout>

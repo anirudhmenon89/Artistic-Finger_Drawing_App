@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cloudnine.artistic"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cloudnine.activities.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            tools:ignore="NewApi" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.cloudnine.activities.DrawScreen"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            tools:targetApi="14" />
+        
+        <activity
+            android:name="com.cloudnine.activities.AboutUs"
+            android:theme="@style/Theme.TransparencyDemo"
+            tools:ignore="NewApi" />
+        
+        <activity
+            android:name="com.cloudnine.dialogs.ColourPicker"
+            android:theme="@android:style/Theme.Dialog" />
+        
+        <activity
+            android:name="com.cloudnine.dialogs.StrokeSeekBar"
+            android:theme="@android:style/Theme.Dialog" />
+        
+        <activity
+            android:name="com.cloudnine.dialogs.AlertDialog"
+            android:theme="@android:style/Theme.Dialog" />
+        
+        <activity
+            android:name="com.cloudnine.dialogs.ProgressDialog"
+            android:theme="@android:style/Theme.Dialog" />
+    </application>
+
+</manifest>

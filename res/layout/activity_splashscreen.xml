@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:parallax="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSplashRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.cloudnine.customviews.ParallaxImageView
+            android:id="@+id/ivBlurBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splashimage8blur"
+            android:visibility="invisible" />
+
+        <!--
+             <com.cloudnine.customviews.ParallaxImageView
+            android:id="@+id/ivBlurBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            parallax:tiltSensitivity="10.0"
+            android:visibility="invisible" />
+        -->
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:background="#4FA856"
+            android:text="E n t e r"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivArtistic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/artistic"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</RelativeLayout>
