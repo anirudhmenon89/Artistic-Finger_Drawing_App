@@ -64,7 +64,7 @@ public class ArtisticActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		BugSenseHandler.initAndStartSession(ArtisticActivity.this, "e615a761");
+		BugSenseHandler.initAndStartSession(ArtisticActivity.this, "YOUR_KEY_HERE");
 	}
 	
 	protected void Logi(String tag, String message) {
